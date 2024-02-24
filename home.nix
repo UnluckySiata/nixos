@@ -45,7 +45,9 @@ in
     # htmx-lsp
     vscode-langservers-extracted
 
-    llvmPackages_17.clang-unwrapped
+    cmake
+    (lowPrio llvmPackages_17.clang-unwrapped)
+    (hiPrio clang-tools.override { llvmPackages = llvmPackages_17; enableLibcxx = true; })
 
     cargo
     rustc
