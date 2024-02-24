@@ -37,6 +37,8 @@ in
     tmux
     tmux-sessionizer
 
+    direnv
+
     # lsp + more
     nodejs_21
     nixd
